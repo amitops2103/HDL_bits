@@ -1,7 +1,5 @@
-// synthesis verilog_input_version verilog_2001
-module top_module (
-    input [7:0] in,
-    output reg [2:0] pos );
+module top_module (input [7:0] in, output reg [2:0] pos);
+    
     always @(*) begin
         casez (in[7:0])
         8'bzzzzzzz1: pos = 0;  
